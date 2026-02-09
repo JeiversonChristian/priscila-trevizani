@@ -40,13 +40,28 @@ O projeto foi organizado de forma modular para facilitar a manutenção e escala
 
 ```text
 priscila-design/
+│
+├── index.html            # Página Inicial (Home)
+├── contato.html          # Página de Contato
+├── galeria.html          # Página de Galeria (opcional agora, mas bom já criar)
+│
 ├── assets/
-│   ├── css/       # Estilos globais e específicos por página
-│   ├── img/       # Imagens do portfólio e assets gráficos
-│   └── js/        # Scripts de interatividade
-├── index.html     # Página Principal
-├── contato.html   # Página de Contato
-└── galeria.html   # Vitrine de Trabalhos
+│   ├── css/
+│   │   ├── global.css    # Estilos gerais (reset, variáveis de cor, tipografia)
+│   │   ├── home.css      # Estilos específicos da Home
+│   │   └── contato.css   # Estilos específicos de Contato
+│   │
+│   ├── js/
+│   │   └── main.js       # Script para o carrossel e menu
+│   │
+│   └── img/
+│       ├── logo.png      # (Ou apenas texto estilizado)
+│       └── placeholders/ # Imagens temporárias para o carrossel
+│           ├── work1.jpg
+│           ├── work2.jpg
+│           └── work3.jpg
+│
+└── README.md
 ```
 
 ## 📬 Vamos conversar?
