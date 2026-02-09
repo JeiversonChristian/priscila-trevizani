@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priscila Trevizani | Designer Gráfico</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <aside class="bio-section">
+            <header>
+                <h1 class="logo">Priscila Trevizani<span class="dot">.</span></h1>
+                <p class="role">Designer Gráfico & Visual</p>
+            </header>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="paginas/galeria.html">Galeria</a></li>
+                    <li><a href="paginas/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="about-summary">
+                <h3>Sobre</h3>
+                <p>
+                    Especialista em transformar ideias complexas em identidades visuais minimalistas e impactantes. 
+                    Foco em branding, editorial e design digital.
+                </p>
+                <a href="paginas/contato.html" class="btn-link">
+                    Vamos conversar <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <footer class="bio-footer">
+                <div class="social-links">
+                    <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" title="Behance"><i class="fa-brands fa-behance"></i></a>
+                    <a href="mailto:email@exemplo.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <p class="copy">&copy; 2026 Priscila Trevizani</p>
+            </footer>
+        </aside>
+
+        <main class="showcase-section">
+            <div class="carousel-container">
+                <div class="slide active">
+                    <div class="placeholder-art art-1">
+                        <span class="art-label">Identidade Visual</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="placeholder-art art-2">
+                        <span class="art-label">Editorial Design</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="placeholder-art art-3">
+                        <span class="art-label">Social Media</span>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
