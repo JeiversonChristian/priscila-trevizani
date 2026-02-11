@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Priscila Trevizani</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // AQUI VOCÊ COLOCARÁ A PUBLIC KEY DELA DEPOIS
+            // Por enquanto, deixe comentado ou vazio se não tiver a chave ainda
+            // emailjs.init("SUA_PUBLIC_KEY");
+        })();
+    </script>
+</head>
+<body>
+
+    <div class="contact-wrapper">
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+            <h1 class="logo-small">Priscila Trevizani<span class="dot">.</span></h1>
+        </nav>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Vamos criar algo incrível?</h2>
+                <p>
+                    Estou disponível para novos projetos de identidade visual, design editorial e consultoria de marca.
+                    Preencha o formulário ou entre em contato direto pelas redes.
+                </p>
+                
+                <div class="direct-contact">
+                    <p><i class="fa-regular fa-envelope"></i> pritrevizani@gmail.com</p>
+                    <div class="social-mini">
+                        <a href="https://www.instagram.com/design.trevizani/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/priscila-trevizani/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/priscilatrevizani" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Conte sobre o seu projeto..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="button-text">Enviar Mensagem</button>
+                <p id="feedback-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/contact.js"></script>
+</body>
+</html>
